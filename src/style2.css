@@ -191,12 +191,37 @@ a {
     height: 216px;
     border: 2px solid #FFF;
     border-radius: 50%;
-    background-color: #FFF;
-    background-image: url(../assets/1.png);
+    /* background-color: #FFF; */
+    /* background-image: url(../assets/A.png); */
     background-size: cover;
     transform: translateX(-50%);
     margin-bottom: 37px;
     overflow: hidden;
+    
+}
+#Anna { 
+    background-image: url(../assets/A.png);
+    background-size: cover;
+}
+
+#Mulan {
+    background-image: url(../assets/Mul.png);
+    background-size: cover;
+}
+
+#Moana {
+    background-image: url(../assets/M.png);
+    background-size: cover;
+}
+
+#Elsa {
+    background-image: url(../assets/E.png);
+    background-size: cover;
+}
+
+#Rapunzel {
+    background-image: url(../assets/R.png);
+    background-size: cover;
 }
 
 .cont-card .card-result-name {
