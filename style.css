@@ -154,13 +154,14 @@ body {
   
   .image-upload-wrap {
     margin-top: 20px;
-    border: 4px dashed #e2f1f8;
+    border: 4px dashed #808e95;
     position: relative;
   }
   
   .image-dropping, .image-upload-wrap:hover {
     background-color: #808e95;
-    border: 4px dashed #ffffff;
+    border: 4px dashed #8d8888;
+   
   }
   
   .image-title-wrap {
@@ -175,10 +176,10 @@ body {
   .drag-text h3 {
     font-weight: 100;
     text-transform: uppercase;
-    color: #15824B;
+    color: rgb(121, 119, 119);
     padding: 60px 0;
   }
-  
+
   .file-upload-image {
     max-height: 200px;
     max-width: 200px;

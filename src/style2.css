@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    margin-top: 500px;
+    margin-top: 300px;
 }
 /* 영상 배경 스타일 */
 .video-background {
@@ -95,7 +95,7 @@ a {
 .cont {
     display: none;
 }
-
+/* 
 .cont .webcam-empty {
     width: 390px;
     height: 500px;
@@ -114,7 +114,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-}
+} */
 
 .btn-start:hover{
     text-decoration: underline;
@@ -142,6 +142,133 @@ a {
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+  
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
+
+.cont-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 800px;
+}
+
+.item-card {
+    position: relative;
+    transform: scale(0.01) rotateY(720deg);
+    transform-style: preserve-3d;
+    transition: 1.2s;
+    width: 330px;
+    padding: 40px 30px;
+    background:#F2994A;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.id-card-active .item-card {
+    transform: scale(1) rotateY(0deg);
+}
+
+.cont-card .card-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.cont-card .card-result {
+    position: relative;
+    left: 50%;
+    width: 216px;
+    height: 216px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    background-color: #FFF;
+    background-image: url(../assets/1.png);
+    background-size: cover;
+    transform: translateX(-50%);
+    margin-bottom: 37px;
+    overflow: hidden;
+}
+
+.cont-card .card-result-name {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.share-btn, .link-return {
+    background: #FFF;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.share-btn {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.link-return {
+    display: block;
+    text-decoration: none;
+}
+
+.share-btn:hover, .link-return:hover {
+    text-decoration: underline;
+}
+
+.cont-card.id-card-active .item-card:hover {
+    background: #F96167;
+	transform: scale(1.1) rotateZ(3deg);
+}
+
+/* fail.html */
+.fail .item-card{
+    background:#828282;
+}
+
+.id-card-active.fail .item-card {
+    animation-duration: .3s;
+    animation-name: animation-fail;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation-fail {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-20px); 
+    }
+    40%{
+        transform: translateX(20px); 
+    }
+    60%{
+        transform: translateX(-20px); 
+    }
+    80%{
+        transform: translateX(20px); 
+    }
+    100%{
+        transform: translateX(0); 
+    }
 }
 
 @media (min-aspect-ratio: 16/9) {
