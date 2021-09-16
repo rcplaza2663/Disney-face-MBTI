@@ -157,6 +157,7 @@ a {
     align-items: center;
     justify-content: center;
     perspective: 800px;
+    margin-top: 100px;
 }
 
 .item-card {
@@ -233,6 +234,13 @@ a {
     border-bottom: 2px solid #F2F2F2;
 }
 
+.card-result-text {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F2F2F2; 
+}
 .share-btn, .link-return {
     background: #FFF;
     border-radius: 10px;
