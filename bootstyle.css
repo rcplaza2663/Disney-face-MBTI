@@ -343,11 +343,12 @@ sup {
 }
 
 a {
-  color: #1abc9c;
-  text-decoration: underline;
+  color: #8d8888;
+  text-decoration: none;
 }
 a:hover {
   color: #15967d;
+  text-decoration: underline #15967d;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3132,14 +3133,12 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  color: #fff;           
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #16a085;
-  border-color: #15967d;
+  text-decoration: none;
+  border-color: white;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -4045,7 +4044,6 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #1abc9c;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4055,7 +4053,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #15967d;
+    text-decoration: none;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4158,6 +4156,9 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+}
+.navbar-brand:hover{
+    text-decoration: none;
 }
 .navbar-nav {
   display: flex;
