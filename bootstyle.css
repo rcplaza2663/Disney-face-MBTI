@@ -213,6 +213,26 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.pb-4, .py-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+.pt-4, .py-4 {
+  padding-top: 1.5rem !important;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -561,7 +581,9 @@ legend + * {
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
-
+.file-upload-input {
+  height: 180px;
+}
 ::-webkit-file-upload-button {
   font: inherit;
 }
@@ -3342,7 +3364,6 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
   border-color: #212529;
 }
 .btn-dark:hover {
@@ -7409,7 +7430,7 @@ textarea.form-control-lg {
   margin-top: 0.5rem !important;
 }
 
-.mt-3 {
+.mt-3, .my-3 {
   margin-top: 1rem !important;
 }
 
@@ -7465,7 +7486,7 @@ textarea.form-control-lg {
   margin-bottom: 0.5rem !important;
 }
 
-.mb-3 {
+.mb-3, .my-3 {
   margin-bottom: 1rem !important;
 }
 
@@ -11390,7 +11411,7 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
